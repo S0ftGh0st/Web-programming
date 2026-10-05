@@ -1,0 +1,14 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: tan;
+}
+.button {
+    padding: 10px 20px;
+    background-color: floralwhite;
+    cursor: pointer;
+}
+.h1 {
+    color: floralwhite;
+}
