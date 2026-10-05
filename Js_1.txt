@@ -1,0 +1,48 @@
+### 1.1
+const first_name = 'Вася';
+let age = 19;
+console.log(first_name);
+console.log(age);
+age = 20;
+console.log(first_name, age);
+// Создана константа first_name, которая хранит в себе имя
+// Создана переменная age, которая хранит возраст
+// С помощью двух console.log выведены значения переменных 
+// Далее переменной age присвоено новое значение
+// С помощью одного console.log выведены значения переменных с новым значением возраста
+/*Создана константа first_name, которая хранит в себе имя
+Создана переменная age, которая хранит возраст
+С помощью двух console.log выведены значения переменных 
+Далее переменной age присвоено новое значение
+С помощью одного console.log выведены значения переменных с новым значением возраста
+*/
+
+### 1.2
+let ten_zero = 1e10;
+console.log(ten_zero);
+let five_num = 1e-5;
+console.log(five_num);
+let num_str = parseInt('15');
+console.log(num_str);
+console.log(Math.floor(0.3));
+console.log(Math.ceil(0.3));
+console.log(Math.round(0.3));
+console.log(Math.floor(0.6));
+console.log(Math.ceil(0.6));
+console.log(Math.round(0.6));
+console.log(isNan(five_num) === isNan(num_str));
+
+### 1.3
+let str_js = 'JAVASCRIPT';
+console.log(str_js.toLowerCase());
+let str_js2 = 'javascript';
+str_js2 = str_js2[0].toUpperCase() + str_js2.substring(1);
+console.log(str_js2);
+function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        return str.substring(0, maxlength-3) + '...';
+    } else {
+        return str;
+    }
+}
+console.log(truncate(str_js, 7));
